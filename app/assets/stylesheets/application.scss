@@ -1,0 +1,174 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Margarine');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Margarine');
+h1{
+  font-family: 'Baloo Chettan', cursive;
+  font-size: 60px;
+}
+body {
+  font-family: Roboto, Arial, sans-serif !important;
+}
+
+.custom-image{
+    max-height: 500px
+}
+
+#logo {
+float: left;
+font-size: 1.7em;
+color: black;
+text-transform: uppercase;
+letter-spacing: -1px;
+font-weight: bold;
+}
+
+#logo:hover {
+color: #00f;
+text-decoration: none;
+}
+
+.center {
+text-align: center;
+}
+.right{
+  float:right;
+}
+.jumbotron {
+background-image: asset-url('new_cover_page.png');
+background-size: cover;
+height: 550px;
+}
+
+.jumbotron h1 {
+
+color: #fff;
+
+text-align: center;
+
+margin-bottom: 30px;
+
+letter-spacing: -1px;
+
+font-weight: bold;
+
+}
+
+.btn-xlarge {
+
+font-size: 1.7em;
+
+background-color: black;
+
+}
+
+footer {
+
+margin-top: 45px;
+
+padding-top: 5px;
+
+border-top: 1px solid #eaeaea;
+
+color: #777;
+
+}
+
+.book-actions {
+
+padding-top: 0;
+
+}
+
+.description {
+
+margin-top: 0;
+
+}
+
+
+
+#text-style{
+    font-weight: bold;
+}
+
+.listing {
+list-style: none;
+padding-left: 0;
+}
+
+.center {
+text-align: center;
+}
+
+.btn-size{
+  padding: 5px;
+  float: right;
+}
+
+footer{
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 15px;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.left{
+  text-align: left;
+}
+.topping-border{
+border-top: 1px solid #eaeaea;
+padding-top :15px;
+margin-top: 10px;
+}
+
+f-padding{
+  padding-top: 15px;
+  margin-top: 30px;
+}
+
+.f-left{
+  float:left;
+}
+.f-right{
+  float: right;
+}
+
+.book-title {
+font-weight: bold;
+font-size: 1.5em;
+}
+.book-index{
+  margin-bottom: -10px;
+  padding-bottom:  10px;
+}
+.left{
+  text-align: left;
+}
+
+.right{
+  text-align: right;
+}
+
+.sum-board{
+  display: block;
+  overflow: scroll;
+  text-overflow: ellipsis;
+  max-height: 250px;
+}
+
+.book-body {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.custom-sum{
+  display: block;
+  overflow: scroll;
+  text-overflow: ellipsis;
+  max-height: 185px;
+}

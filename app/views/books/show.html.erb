@@ -1,0 +1,54 @@
+
+
+<%= render 'shared/errors', obj:@book %>
+
+<h1>The seleted book </h1>
+<div class="well col-xs-8 col-xs-offset-2">
+<br>
+
+  <div class="row left">
+
+    <div class="col-sm-4">
+      <image src = "<%= (url_for(@book.avatar)) %>" height="420" width="274">
+    </div>
+    <div class="col-sm-8">
+
+      <div class="row">
+        <div class="col-sm-3">
+          <h2 class="description"><strong>Title: </strong></h2>
+        </div>
+        <div class="col-sm-9">
+          <h2><%= @book.title %></h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <h4 class="description"><strong>ISBN: </strong></h4>
+          <h4 class="description"><strong>Author:   </strong></h4>
+        </div>
+        <div class="col-sm-9">
+          <h4><%= @book.isbn %></h4>
+          <h4><%= @book.author %></h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <h4 class="description"><strong>Summaries: </strong></h4>
+        </div>
+        <div class="col-sm-9">
+          <h4 class="sum-board"><%= @book.summaries %></h4>
+          <div class="book-actions right">
+            <%= link_to "Edit", edit_book_path(@book), class: "btn btn-xs btn-primary" %>
+            <%= link_to "Delete", book_path(@book), method: :delete,
+            data: { confirm: "Are you sure you want to delete the book information?"},
+            class: "btn btn-xs btn-danger" %>
+            <%= link_to "View all book information", books_path, class: "btn btn-xs btn-success" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
